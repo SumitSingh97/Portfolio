@@ -11,18 +11,23 @@
     padding: 0px;
 }
 
-/* ---------------------- HEADER ---------------------- */
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Resource/images/Background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+}
+
+/* ------------------------------------------------------------------ HEADER ------------------------------------------------------------------ */
 .header{
     min-height: 100vh;
     width: 100%;
-    background-color: black;
-    background-image: url(Resource/images/MainBanner.jpeg);
-    background-size: cover;
-    background-position: center;
     position: relative;
 }
 
-/* ---------------------- NAVBAR ---------------------- */
+/* -------------------------------------------- Navbar -------------------------------------------- */
 nav{
     display: flex;
     padding: 2% 6%;
@@ -34,6 +39,21 @@ nav a{
     color: white;
 }
 
+/*-- Navbar Profile Picture --*/
+.pfp-items img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.pfp-items h1{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 22px;
+    font-family: "Noe Display";
+    font-weight: 100;
+    position: relative;
+    bottom: 15px;
+}
 .pfp-items::after{
     content: '';
     width: 0%;
@@ -47,27 +67,11 @@ nav a{
     width: 100%;
 }
 
-.pfp-items img{
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.pfp-items h1{
-    display: inline-block;
-    font-weight: 500;
-    font-size: 22px;
-    font-family: "Noe Display";
-    font-weight: 100;
-    position: relative;
-    bottom: 15px;
-}
-
+/*-- Navbar Side Links --*/
 .nav-links{
     flex: 1;
     text-align: right;
 }
-
 .nav-links ul li{
     list-style: none;
     display: inline-block;
@@ -76,14 +80,12 @@ nav a{
     padding: 8px 12px;
     position: relative;
 }
-
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 14px;
     
 }
-
 .nav-links ul li::after{
     content: '';
     width: 0%;
@@ -97,7 +99,7 @@ nav a{
     width: 100%;
 }
 
-/* ---------------------- FRONT-CONTENT ---------------------- */
+/* -------------------------------------------- Front-Content -------------------------------------------- */
 .front-content{
     width: 70%;
     color: #fff;
@@ -108,12 +110,14 @@ nav a{
     text-align: center;
 }
 
+/*-- Front Page Greeting --*/
 .front-content h6{
     font-size: 30px;
     font-family: "Yatra One", system-ui;
     margin-bottom: 10px;
 }
 
+/*-- Front Page Hover Animated Name --*/
 .front-content .fc-name{
     display: inline-block;
     margin-left: 0px;
@@ -123,7 +127,6 @@ nav a{
 .front-content .fc-name:hover{
     color: black;
 }
-
 .front-content .fc-name::after{
     content: '';
     width: 0%;
@@ -139,6 +142,7 @@ nav a{
     width: 105%;
 }
 
+/*-- Front Page Scrolling Text --*/
 .main-typing{
     font-family: "Noe Display";
 }
@@ -162,6 +166,7 @@ nav a{
     }
 }
 
+/*-- Front Page Information Paragraph --*/
 .front-content p{
     font-family: "Raleway", sans-serif;
     font-size: 40px;
@@ -169,6 +174,7 @@ nav a{
     margin-top: 10px;
 }
 
+/*-- Front Page Button --*/
 .fc-contact-button{
     display: inline-block;
     text-decoration: none;
@@ -189,12 +195,13 @@ nav a{
     color: black;
     transition: 0.5s;
 }
+
+/*-- Hide Mobile Menu Icon --*/
 nav .fa-solid{
     display: none;
 }
 
-/* ---------------------- FRONT-CARDS ---------------------- */
-
+/* -------------------------------------------- Front Page Social Cards -------------------------------------------- */
 .fc-cards{
     margin-top: 50px;
     display: flex;
@@ -216,7 +223,7 @@ nav .fa-solid{
     width: 200px;
 }
 
-/* Github card */
+/*-- Github card --*/
 .fc-cards-github{
     height: 200px;
     width: 200px;
@@ -261,7 +268,7 @@ nav .fa-solid{
     right: 20px;
 }
 
-/* LinkedIn card */
+/*-- LinkedIn card --*/
 .fc-cards-linkedin{
     height: 200px;
     width: 200px;
@@ -302,12 +309,11 @@ nav .fa-solid{
     border: none;
     cursor: pointer;
 }
-
 .fc-cards-linkedin:hover .blur-card-linkedin{
     right: 20px;
 }
 
-/* Instagram card */
+/*-- Instagram card --*/
 .fc-cards-instagram{
     height: 200px;
     width: 200px;
@@ -352,7 +358,7 @@ nav .fa-solid{
     right: 20px;
 }
 
-/* Youtube card */
+/*-- Youtube card --*/
 .fc-cards-youtube{
     height: 200px;
     width: 200px;
@@ -397,7 +403,9 @@ nav .fa-solid{
     right: 20px;
 }
 
-/* ---------------------- HEADER-RESPONSIVE ---------------------- */
+/* -------------------------------------------- Responsive-Header -------------------------------------------- */
+
+/*-- Mobile Device --*/
 @media (max-width: 700px)
 {
     .front-content{
@@ -429,9 +437,9 @@ nav .fa-solid{
     }
 
     .nav-links{
-        position: absolute;
+        position: fixed;
         background: black;
-        height: 100vh;
+        height: 100%;
         width: 200px;
         top: 0;
         right: -300px;
@@ -491,4 +499,487 @@ nav .fa-solid{
         right: 20px;
         backdrop-filter: blur(0px);
     }
+}
+
+/*-- Tablet Device --*/
+@media (min-width:701px) and (max-width: 1395px)
+{
+    .front-content{
+        top: 60%;
+    }
+    .front-content h6{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .front-content .fc-name::after{
+        content: '';
+        width: 0%;
+        height: 20px;
+        background: #fff;
+        display: block;
+        margin-top: -26px;
+        margin-left: -2px;
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+    .front-content .fc-name:hover::after{
+        width: 108%;
+    }
+    
+    .front-content p{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .dynamic-text{
+        height: 60px;
+        line-height: 60px;
+    }
+    .dynamic-text li{
+        font-size: 60px;
+    }
+    @keyframes slide {
+        100%{
+            top: -240px;
+        }
+    }
+}
+
+/*-- Small mobile Device --*/
+@media (max-width: 412px){
+    .front-content{
+        top: 70%;
+    }
+}
+
+/* ------------------------------------------------------------------ PROJECT ------------------------------------------------------------------ */
+
+.Project{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* -------------------------------------------- My Projects -------------------------------------------- */
+.my-project{
+    width: 70%;
+}
+
+/*-- My Projects Title --*/
+.Project h1{
+    display: inline-block;
+    padding-top: 40px;
+    margin-bottom: 50px;
+    font-family: "Yatra One", system-ui;
+    text-decoration: underline;
+    font-size: 50px;
+    font-weight: 100;
+    color: white;
+    transition: 0.3s;
+}
+.Project h1:hover{
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+}
+.Project h1::after{
+    content: '';
+    width: 0%;
+    height: 47px;
+    background: white;
+    display: block;
+    margin-top: -63px;
+    margin-left: -2px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.Project h1:hover::after{
+    width: 102%;
+}
+
+/*-- Project Cards Section --*/
+.mp-cards-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+}
+.mp-card{
+    height: 324px;
+    width: 576px;
+    margin-bottom: 28px;
+    border-radius: 20px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.mp-card:hover{
+    height: 378px;
+    width: 672px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 200px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+/*-- Project : Portfolio --*/
+
+/*-- Slider Portfolio --*/
+.slider-container-portfolio{
+    height: 270px;
+    width: 672px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+    border-bottom: 3px solid transparent;
+    filter: grayscale(100%);
+}
+.mp-card-portfolio:hover .slider-container-portfolio{
+    border-bottom: 3px solid black;
+    filter: grayscale(0%);
+}
+.slide-portfolio img{
+    height: 324px;
+    width: 576px;
+    position: relative;
+    float: left;
+    transition: 0.1s;
+}
+.mp-card-portfolio:hover img{
+    height: 270px;
+    width: 480px;
+}
+
+@-webkit-keyframes portfolio-slide{
+    0% {right:0px;}
+    100% {right:5100px;}
+}
+.slide-portfolio{
+    height: 324px;
+    width: 576px;
+    margin: 0 0 -7040px 0;
+    position: relative;
+    transition: 0.3s;
+}
+.mp-card-portfolio:hover .slide-portfolio{
+    width: 5760px;
+    height: 270px;
+    margin: 0 0 -5100px 0;
+    position: relative;
+    -webkit-animation-name: amazon-slide;
+    -webkit-animation-duration: 24s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+}
+
+/*-- Text Portfolio --*/
+.mp-card-portfolio h3{
+    display: inline-block;
+    margin: 5px 0 0 0;
+    font-family: "Noe Display";
+    font-weight: 100;
+    color: white;
+    font-size: 30px;
+}
+.mp-card-portfolio:hover h3{
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+}
+
+.portfolio-stack{
+    display: inline-flex;
+    margin-left: 21%;
+}
+
+.mp-card-portfolio h6{
+    margin: 0 0 0 5px;
+    padding: 7px;
+    border-radius: 15px;
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.mp-card-portfolio:hover h6{
+    display: none;
+}
+
+
+.mp-card-portfolio p{
+    display: none;
+    font-family: "Raleway", sans-serif;
+    padding: 0 30px;
+    font-weight: 500;
+}
+.mp-card-portfolio:hover p{
+    margin-top: 0px;
+    text-align: center;
+    display: block;
+}
+
+/*-- Project : Amazon Clone --*/
+
+/*-- Slider Amazon --*/
+.slider-container-amazon{
+    height: 270px;
+    width: 672px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+    border-bottom: 3px solid transparent;
+    filter: grayscale(100%);
+}
+.mp-card-amazon:hover .slider-container-amazon{
+    border-bottom: 3px solid black;
+    filter: grayscale(0%);
+}
+.slide-amazon img{
+    height: 324px;
+    width: 576px;
+    position: relative;
+    float: left;
+    transition: 0.1s;
+}
+.mp-card-amazon:hover img{
+    height: 270px;
+    width: 480px;
+}
+
+@-webkit-keyframes amazon-slide{
+    0% {right:0px;}
+    100% {right:5100px;}
+}
+.slide-amazon{
+    height: 324px;
+    width: 576px;
+    margin: 0 0 -7040px 0;
+    position: relative;
+    transition: 0.3s;
+}
+.mp-card-amazon:hover .slide-amazon{
+    width: 5760px;
+    height: 270px;
+    margin: 0 0 -5100px 0;
+    position: relative;
+    -webkit-animation-name: amazon-slide;
+    -webkit-animation-duration: 24s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+}
+
+/*-- Text Amazon --*/
+.mp-card-amazon h3{
+    display: inline-block;
+    margin: 5px 0 0 0;
+    font-family: "Noe Display";
+    font-weight: 100;
+    color: white;
+    font-size: 30px;
+}
+.mp-card-amazon:hover h3{
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+}
+.amazon-stack{
+    display: inline-flex;
+    margin-left: 49%;
+}
+.mp-card-amazon h6{
+    margin: 0 0 0 5px;
+    padding: 7px;
+    border-radius: 15px;
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.mp-card-amazon:hover h6{
+    display: none;
+}
+.mp-card-amazon p{
+    display: none;
+    font-family: "Raleway", sans-serif;
+    padding: 0 30px;
+    font-weight: 500;
+}
+.mp-card-amazon:hover p{
+    margin-top: -15px;
+    text-align: center;
+    display: block;
+}
+
+/* ------------------------------------------------------------------ PROJECT-RESPONSIVE ------------------------------------------------------------------ */
+/*-- Mobile Device --*/
+@media (max-width: 850px){
+
+    .header{
+        margin-bottom: 30px;
+    }
+
+    .Project h1{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    }
+    .Project h1::after{
+        
+        height: 37px;
+        margin-top: -44px;
+    }
+    .my-project{
+        flex-direction: column;
+    }
+
+/*-- Project : Amazon Clone --*/
+.mp-card-amazon h3{
+    margin: 5px 0 0 0;
+    font-size: 20px;
+}
+.amazon-stack{
+    margin-left: auto;
+}
+.mp-card-amazon h6{
+    margin: 0 0 0 5px;
+    padding: 7px;
+    border-radius: 15px;
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.mp-card-amazon:hover h6{
+    display: none;
+}
+.mp-card-amazon p{
+    padding: 0 30px;
+    font-size: 15px;
+}
+.mp-card-amazon:hover p{
+    margin-top: -15px;
+}
+
+/*-- Project : Amazon Clone --*/
+.mp-card-portfolio h3{
+    margin: 5px 0 0 0;
+    font-size: 20px;
+}
+.portfolio-stack{
+    margin-left: auto;
+}
+.mp-card-portfolio h6{
+    margin: 0 0 0 5px;
+    padding: 7px;
+    border-radius: 15px;
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.mp-card-portfolio:hover h6{
+    display: none;
+}
+.mp-card-portfolio p{
+    padding: 0 30px;
+    font-size: 15px;
+}
+.mp-card-portfolio:hover p{
+    margin-top: -15px;
+}
+}
+
+/*-- Small mobile Device --*/
+@media (max-width: 412px){
+    .header{
+        margin-bottom: 200px;
+    }
+
+    .Project h1{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    }
+    .Project h1::after{
+        
+        height: 37px;
+        margin-top: -44px;
+    }
+    .my-project{
+        flex-direction: column;
+    }
+
+/*-- Project : Amazon Clone --*/
+.mp-card-amazon h3{
+    margin: 5px 0 0 0;
+    font-size: 20px;
+}
+.amazon-stack{
+    margin-left: auto;
+}
+.mp-card-amazon h6{
+    margin: 0 0 0 5px;
+    padding: 7px;
+    border-radius: 15px;
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.mp-card-amazon:hover h6{
+    display: none;
+}
+.mp-card-amazon p{
+    padding: 0 30px;
+    font-size: 15px;
+}
+.mp-card-amazon:hover p{
+    margin-top: -15px;
+}
+
+/*-- Project : Amazon Clone --*/
+.mp-card-portfolio h3{
+    margin: 5px 0 0 0;
+    font-size: 20px;
+}
+.portfolio-stack{
+    margin-left: auto;
+}
+.mp-card-portfolio h6{
+    margin: 0 0 0 5px;
+    padding: 7px;
+    border-radius: 15px;
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.mp-card-portfolio:hover h6{
+    display: none;
+}
+.mp-card-portfolio p{
+    padding: 0 30px;
+    font-size: 15px;
+}
+.mp-card-portfolio:hover p{
+    margin-top: -15px;
+}
 }
