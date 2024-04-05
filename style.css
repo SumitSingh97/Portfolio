@@ -652,7 +652,7 @@ nav .fa-solid{
     width: 480px;
 }
 
-@-webkit-keyframes portfolio-slide{
+@keyframes portfolio-slide{
     0% {right:0px;}
     100% {right:5100px;}
 }
@@ -668,11 +668,11 @@ nav .fa-solid{
     height: 270px;
     margin: 0 0 -5100px 0;
     position: relative;
-    -webkit-animation-name: amazon-slide;
-    -webkit-animation-duration: 24s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-play-state: running;
+    animation-name: amazon-slide;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
 }
 
 /*-- Text Portfolio --*/
@@ -752,7 +752,7 @@ nav .fa-solid{
     width: 480px;
 }
 
-@-webkit-keyframes amazon-slide{
+@keyframes amazon-slide{
     0% {right:0px;}
     100% {right:5100px;}
 }
@@ -768,11 +768,11 @@ nav .fa-solid{
     height: 270px;
     margin: 0 0 -5100px 0;
     position: relative;
-    -webkit-animation-name: amazon-slide;
-    -webkit-animation-duration: 24s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-play-state: running;
+    animation-name: amazon-slide;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
 }
 
 /*-- Text Amazon --*/
