@@ -12,9 +12,10 @@
 }
 
 body{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     background-image: url(Resource/images/Background.jpeg);
+    /* background-color: bisque; */
     background-size: cover;
     background-attachment: fixed;
     background-position: top center;
@@ -611,7 +612,7 @@ nav .fa-solid{
 .mp-card{
     height: 324px;
     width: 576px;
-    margin-bottom: 28px;
+    margin: 0 10px 28px 10px;
     border-radius: 20px;
     transition: 0.3s;
     overflow: hidden;
@@ -620,7 +621,7 @@ nav .fa-solid{
     height: 378px;
     width: 672px;
     background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0 0 200px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 100px 0px rgba(0, 0, 0, 1);
 
 }
 
@@ -652,7 +653,7 @@ nav .fa-solid{
     width: 480px;
 }
 
-@keyframes portfolio-slide{
+@-webkit-keyframes portfolio-slide{
     0% {right:0px;}
     100% {right:5100px;}
 }
@@ -668,11 +669,11 @@ nav .fa-solid{
     height: 270px;
     margin: 0 0 -5100px 0;
     position: relative;
-    animation-name: amazon-slide;
-    animation-duration: 24s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
+    -webkit-animation-name: amazon-slide;
+    -webkit-animation-duration: 24s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
 }
 
 /*-- Text Portfolio --*/
@@ -752,7 +753,7 @@ nav .fa-solid{
     width: 480px;
 }
 
-@keyframes amazon-slide{
+@-webkit-keyframes amazon-slide{
     0% {right:0px;}
     100% {right:5100px;}
 }
@@ -768,11 +769,11 @@ nav .fa-solid{
     height: 270px;
     margin: 0 0 -5100px 0;
     position: relative;
-    animation-name: amazon-slide;
-    animation-duration: 24s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
+    -webkit-animation-name: amazon-slide;
+    -webkit-animation-duration: 24s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
 }
 
 /*-- Text Amazon --*/
@@ -831,10 +832,9 @@ nav .fa-solid{
     .Project h1{
     padding-top: 20px;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 35px;
     }
     .Project h1::after{
-        
         height: 37px;
         margin-top: -44px;
     }
@@ -983,3 +983,326 @@ nav .fa-solid{
     margin-top: -15px;
 }
 }
+
+/* ------------------------------------------------------------------ JOURNEY ------------------------------------------------------------------ */
+.Journey{
+    width: 100%;
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* text-align: center; */
+}
+
+/* -------------------------------------------- My Journey -------------------------------------------- */
+.my-journey{
+    width: 65%;
+}
+
+/*-- My Journey Title --*/
+.journey-heading{
+    display: flex;
+    justify-content: center;
+}
+
+.journey-heading h1{
+    display: inline-block;
+    padding-top: 40px;
+    font-family: "Yatra One", system-ui;
+    text-decoration: underline;
+    font-size: 50px;
+    font-weight: 100;
+    color: white;
+    transition: 0.3s;
+}
+.journey-heading h1:hover{
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+}
+.journey-heading h1::after{
+    content: '';
+    width: 0%;
+    height: 55px;
+    background: #fff;
+    display: block;
+    margin-top: -65px;
+    margin-left: -15px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.journey-heading h1:hover::after{
+    width: 110%;
+}
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    transition: 0.5s;
+    animation: journey-reveal 0.7s linear forwards;
+    opacity: 0;
+    filter: grayscale(100%);
+}
+.container:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+.GenesisFED .text-box, .GenesisST .text-box{
+    background-color: rgba(62, 95, 240, 0.5);
+}
+.AmazonCSS .text-box, .AmazonSCSA .text-box, .AmazonCSA .text-box{
+    background-color: rgba(35, 47, 62, 0.8);
+}
+.JioCSE .text-box{
+    background-color: rgba(4, 44, 219, 0.5);
+}
+.ConnectCSR .text-box{
+    background-color: rgba(0,108,181,0.5);
+}
+
+.left-container{
+    padding: 10px 50px 10px 0px;
+    margin: -50px;
+}
+@keyframes journey-reveal {
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+.container:nth-child(2){
+    animation-delay: 0.75s;
+}
+.container:nth-child(3){
+    animation-delay: 1.5s;
+}
+.container:nth-child(4){
+    animation-delay: 2.25s;
+}
+.container:nth-child(5){
+    animation-delay: 3s;
+}
+.container:nth-child(6){
+    animation-delay: 3.75s;
+}
+.container:nth-child(7){
+    animation-delay: 4.5s;
+}
+.container:nth-child(8){
+    animation-delay: 5.25s;
+}
+.container:nth-child(9){
+    animation-delay: 6s;
+}
+.container:nth-child(10){
+    animation-delay: 6.75s;
+}
+
+.left-container:hover{
+    transform: translateX(-10px);
+}
+.right-container:hover{
+    transform: translateX(10px);
+}
+
+
+.text-box{
+    padding: 20px 30px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.container:hover .text-box{
+    box-shadow: 0 0 100px 0px rgba(0, 0, 0, 1);
+}
+
+.left-container{
+    left: 0;
+}
+.right-container{
+    left: 50%;
+}
+
+.container img{
+    position: absolute;
+    width: 70px;
+    border-radius: 50%;
+    right: -35px;
+    top: 30px;
+    z-index: 2;
+}
+.right-container img{
+    left: -35px;
+}
+
+
+/* Journey Line */
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: white;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: travel 5.25s linear forwards;
+}
+@keyframes travel {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+/* Container Arrows */
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 45px;
+    z-index: 1;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid white;
+    right: -10px;
+}
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 45px;
+    z-index: 1;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid white;
+    left: -10px;
+}
+
+.text-box h2{
+    font-family: "Noe Display";
+    color: white;
+    font-size: 35px;
+    font-weight: 100;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.text-box .company-period{
+    display: flex;
+    justify-content: space-between;
+}
+.text-box .company-period h5{
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 20px;
+}
+
+.text-box .skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+.text-box .skills h6{
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+.text-box .skills h6:hover{
+    border: 1px solid black;
+}
+.text-box .points{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 5px 5px 10px;
+    border-radius: 15px;
+}
+
+.text-box .points p{
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+/* Journey Responsive */
+
+@media  screen and (max-width: 900px) {
+    .journey-heading h1{
+        font-size: 35px;
+    }
+    .journey-heading h1::after{
+        height: 40px;
+        
+        margin-top: -48px;
+        margin-left: -10px;
+        
+    }
+    .journey-heading h1:hover::after{
+        width: 110%;
+    }
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left: -30px;
+    }
+    .container{
+        width: 100%;
+        padding-left: 45px;
+    }
+    .container img{
+        height: 50px;
+        width: 50px;
+        left: -20px;
+        top: 40px;
+    }
+    .container h2{
+        font-size: 25px;
+    }
+    .container p{
+        font-size: 1px;
+    }
+    .left-container{
+        padding: 10px 50px;
+        margin: 0px;
+        left: -35px;
+    }
+    .right-container{
+        left: -35px;
+    }
+    .left-container-arrow, .right-container-arrow{
+        border-right: 15px solid white;
+        border-left: 0;
+        left: -15px;
+    }
+} 
