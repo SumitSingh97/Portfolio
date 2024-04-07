@@ -1054,16 +1054,25 @@ nav .fa-solid{
     filter: grayscale(0%);
     cursor: pointer;
 }
-.GenesisFED .text-box, .GenesisST .text-box{
+.GenesisFED:hover .text-box{
     background-color: rgba(62, 95, 240, 0.5);
 }
-.AmazonCSS .text-box, .AmazonSCSA .text-box, .AmazonCSA .text-box{
+.GenesisST:hover .text-box{
+    background-color: rgba(62, 95, 240, 0.5);
+}
+.AmazonCSS:hover .text-box{
     background-color: rgba(35, 47, 62, 0.8);
 }
-.JioCSE .text-box{
+.AmazonSCSA:hover .text-box{
+    background-color: rgba(35, 47, 62, 0.8);
+}
+.AmazonCSA:hover .text-box{
+    background-color: rgba(35, 47, 62, 0.8);
+}
+.JioCSE:hover .text-box{
     background-color: rgba(4, 44, 219, 0.5);
 }
-.ConnectCSR .text-box{
+.ConnectCSR:hover .text-box{
     background-color: rgba(0,108,181,0.5);
 }
 
@@ -1184,8 +1193,9 @@ nav .fa-solid{
     z-index: 1;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 10px solid white;
+    border-left: 10px solid transparent;
     right: -10px;
+    transition: 0.5s;
 }
 .right-container-arrow{
     height: 0;
@@ -1195,8 +1205,31 @@ nav .fa-solid{
     z-index: 1;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right: 10px solid white;
+    border-right: 10px solid transparent;
     left: -10px;
+    transition: 0.5s;
+}
+
+.GenesisFED:hover  .left-container-arrow{
+    border-left: 10px solid rgba(62, 95, 240, 0.5);
+}
+.GenesisST:hover .right-container-arrow{
+    border-right: 10px solid rgba(62, 95, 240, 0.5);
+}
+.AmazonCSS:hover  .left-container-arrow{
+    border-left: 10px solid rgba(35, 47, 62, 0.8);
+}
+.AmazonSCSA:hover .right-container-arrow{
+    border-right: 10px solid rgba(35, 47, 62, 0.8);
+}
+.JioCSE:hover  .left-container-arrow{
+    border-left: 10px solid rgba(4, 44, 219, 0.5);
+}
+.AmazonCSA:hover .right-container-arrow{
+    border-right: 10px solid rgba(35, 47, 62, 0.8);
+}
+.ConnectCSR:hover  .left-container-arrow{
+    border-left: 10px solid rgba(0,108,181,0.5);
 }
 
 .text-box h2{
@@ -1300,9 +1333,38 @@ nav .fa-solid{
     .right-container{
         left: -35px;
     }
+    .GenesisFED:hover  .left-container-arrow{
+        border-right: 15px solid rgba(62, 95, 240, 0.5);
+        border-left: 0;
+    }
+    .GenesisST:hover .right-container-arrow{
+        border-right: 15px solid rgba(62, 95, 240, 0.5);
+        border-left: 0;
+    }
+    .AmazonCSS:hover  .left-container-arrow{
+        border-right: 15px solid rgba(35, 47, 62, 0.8);
+        border-left: 0;
+    }
+    .AmazonSCSA:hover .right-container-arrow{
+        border-right: 15px solid rgba(35, 47, 62, 0.8);
+        border-left: 0;
+    }
+    .JioCSE:hover  .left-container-arrow{
+        border-right: 15px solid rgba(4, 44, 219, 0.5);
+        border-left: 0;
+    }
+    .AmazonCSA:hover .right-container-arrow{
+        border-right: 15px solid rgba(35, 47, 62, 0.8);
+        border-left: 0;
+    }
+    .ConnectCSR:hover  .left-container-arrow{
+        border-right: 15px solid rgba(0,108,181,0.5);
+        border-left: 0;
+    }
     .left-container-arrow, .right-container-arrow{
-        border-right: 15px solid white;
         border-left: 0;
         left: -15px;
+        border-right:15px solid rgba(255, 255, 255, 0.25);
     }
+    
 } 
