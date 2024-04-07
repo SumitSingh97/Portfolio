@@ -12,18 +12,17 @@
 }
 
 body{
-    /* height: 100vh; */
     width: 100%;
-    background-image: url(Resource/images/Background.jpeg);
-    /* background-color: bisque; */
+    background-image: url(Resource/images/Background.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top center;
 }
 
 /* ------------------------------------------------------------------ HEADER ------------------------------------------------------------------ */
 .header{
-    min-height: 100vh;
+    min-height: 100svh;
     width: 100%;
     position: relative;
 }
@@ -44,14 +43,19 @@ nav a{
 .pfp-items img{
     width: 50px;
     height: 50px;
+    border-radius: 50%;
     margin-right: 10px;
+    filter: grayscale(100%);
+}
+nav:hover .pfp-items img{
+    filter: grayscale(0%);
 }
 .pfp-items h1{
     display: inline-block;
     font-weight: 500;
-    font-size: 22px;
-    font-family: "Noe Display";
-    font-weight: 100;
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
     position: relative;
     bottom: 15px;
 }
@@ -65,7 +69,7 @@ nav a{
     transition: 0.3s;
 }
 .pfp-items:hover::after{
-    width: 100%;
+    width: 105%;
 }
 
 /*-- Navbar Side Links --*/
@@ -76,21 +80,23 @@ nav a{
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    font-family: "Noe Display";
-    font-weight: 100;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
     padding: 8px 12px;
     position: relative;
 }
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
     
 }
 .nav-links ul li::after{
     content: '';
+    position: relative;
     width: 0%;
     height: 2px;
+    top: 5px;
     background: #fff;
     display: block;
     margin: auto;
@@ -114,6 +120,7 @@ nav a{
 /*-- Front Page Greeting --*/
 .front-content h6{
     font-size: 30px;
+    font-weight: 100;
     font-family: "Yatra One", system-ui;
     margin-bottom: 10px;
 }
@@ -183,18 +190,19 @@ nav a{
     border: 1px solid #fff;
     border-radius: 10px;
     margin-top: 20px;
-    padding: 10px 30px;
-    font-size: 18px;
-    font-weight: 100;
-    background: transparent;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.5);
     position: relative;
     cursor: pointer;
+    transition: 0.5s;
 }
 .fc-contact-button:hover{
     border: 1px solid black;
-    background-color: #fff;
-    color: black;
-    transition: 0.5s;
+    background-color: black;
+    font-size: 16px;
 }
 
 /*-- Hide Mobile Menu Icon --*/
@@ -989,9 +997,7 @@ nav .fa-solid{
     width: 100%;
     position: relative;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
-    /* text-align: center; */
 }
 
 /* -------------------------------------------- My Journey -------------------------------------------- */
@@ -1054,11 +1060,52 @@ nav .fa-solid{
     filter: grayscale(0%);
     cursor: pointer;
 }
+@keyframes journey-reveal {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+.container:nth-child(2){
+    animation-delay: 0.5s;
+}
+.container:nth-child(3){
+    animation-delay: 1s;
+}
+.container:nth-child(4){
+    animation-delay: 1.5s;
+}
+.container:nth-child(5){
+    animation-delay: 2s;
+}
+.container:nth-child(6){
+    animation-delay: 2.5s;
+}
+.container:nth-child(7){
+    animation-delay: 3s;
+}
+.container:nth-child(8){
+    animation-delay: 3.5s;
+}
+.container:nth-child(9){
+    animation-delay: 4s;
+}
+.container:nth-child(10){
+    animation-delay: 4.5s;
+}
+
 .GenesisFED:hover .text-box{
-    background-color: rgba(62, 95, 240, 0.5);
+    background-color: rgba(20,92,159, 0.5);
 }
 .GenesisST:hover .text-box{
-    background-color: rgba(62, 95, 240, 0.5);
+    background-color: rgba(20,92,159, 0.5);
 }
 .AmazonCSS:hover .text-box{
     background-color: rgba(35, 47, 62, 0.8);
@@ -1075,67 +1122,26 @@ nav .fa-solid{
 .ConnectCSR:hover .text-box{
     background-color: rgba(0,108,181,0.5);
 }
+.LPUCSE:hover .text-box{
+    background-color: rgba(245,134,52,0.7);
+}
+.SJS12:hover .text-box{
+    background-color: rgba(129,193,231,0.5);
+}
+.SJS10:hover .text-box{
+    background-color: rgba(129,193,231,0.5);
+}
 
 .left-container{
     padding: 10px 50px 10px 0px;
     margin: -50px;
 }
-@keyframes journey-reveal {
-    0%{
-        opacity: 1;
-        transform: translateY(-30px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-.container:nth-child(1){
-    animation-delay: 0s;
-}
-.container:nth-child(2){
-    animation-delay: 0.75s;
-}
-.container:nth-child(3){
-    animation-delay: 1.5s;
-}
-.container:nth-child(4){
-    animation-delay: 2.25s;
-}
-.container:nth-child(5){
-    animation-delay: 3s;
-}
-.container:nth-child(6){
-    animation-delay: 3.75s;
-}
-.container:nth-child(7){
-    animation-delay: 4.5s;
-}
-.container:nth-child(8){
-    animation-delay: 5.25s;
-}
-.container:nth-child(9){
-    animation-delay: 6s;
-}
-.container:nth-child(10){
-    animation-delay: 6.75s;
-}
-
-.left-container:hover{
-    transform: translateX(-10px);
-}
-.right-container:hover{
-    transform: translateX(10px);
-}
-
 
 .text-box{
     padding: 20px 30px;
     position: relative;
     background: rgba(255, 255, 255, 0.25);
     border-radius: 10px;
-    font-size: 15px;
     transition: 0.5s;
 }
 .container:hover .text-box{
@@ -1173,7 +1179,7 @@ nav .fa-solid{
     left: 50%;
     margin-left: -3px;
     z-index: -1;
-    animation: travel 5.25s linear forwards;
+    animation: travel 5s linear forwards;
 }
 @keyframes travel {
     0%{
@@ -1211,10 +1217,10 @@ nav .fa-solid{
 }
 
 .GenesisFED:hover  .left-container-arrow{
-    border-left: 10px solid rgba(62, 95, 240, 0.5);
+    border-left: 10px solid rgba(20,92,159, 0.5);
 }
 .GenesisST:hover .right-container-arrow{
-    border-right: 10px solid rgba(62, 95, 240, 0.5);
+    border-right: 10px solid rgba(20,92,159, 0.5);
 }
 .AmazonCSS:hover  .left-container-arrow{
     border-left: 10px solid rgba(35, 47, 62, 0.8);
@@ -1230,6 +1236,15 @@ nav .fa-solid{
 }
 .ConnectCSR:hover  .left-container-arrow{
     border-left: 10px solid rgba(0,108,181,0.5);
+}
+.LPUCSE:hover .right-container-arrow{
+    border-right: 10px solid rgba(245,134,52,0.7);
+}
+.SJS12:hover .left-container-arrow{
+    border-left: 10px solid rgba(129,193,231,0.5);
+}
+.SJS10:hover .right-container-arrow{
+    border-right: 10px solid rgba(129,193,231,0.5);
 }
 
 .text-box h2{
@@ -1319,11 +1334,22 @@ nav .fa-solid{
         left: -20px;
         top: 40px;
     }
-    .container h2{
+    .text-box h2{
         font-size: 25px;
     }
-    .container p{
-        font-size: 1px;
+    .text-box .company-period h5{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .text-box .skills h6{
+        font-size: 11px;
+        padding: 2px 5px;
+        font-weight: 700;
+    }
+    .text-box .points p{
+        /* text-decoration: underline; */
+        font-size: 14px;
+        font-weight: 200;
     }
     .left-container{
         padding: 10px 50px;
@@ -1334,11 +1360,11 @@ nav .fa-solid{
         left: -35px;
     }
     .GenesisFED:hover  .left-container-arrow{
-        border-right: 15px solid rgba(62, 95, 240, 0.5);
+        border-right: 15px solid rgba(20,92,159, 0.5);
         border-left: 0;
     }
     .GenesisST:hover .right-container-arrow{
-        border-right: 15px solid rgba(62, 95, 240, 0.5);
+        border-right: 15px solid rgba(20,92,159, 0.5);
         border-left: 0;
     }
     .AmazonCSS:hover  .left-container-arrow{
@@ -1361,6 +1387,19 @@ nav .fa-solid{
         border-right: 15px solid rgba(0,108,181,0.5);
         border-left: 0;
     }
+    .LPUCSE:hover  .right-container-arrow{
+        border-right: 15px solid rgba(245,134,52,0.7);
+        border-left: 0;
+    }
+    .SJS12:hover  .left-container-arrow{
+        border-right: 15px solid rgba(129,193,231,0.5);
+        border-left: 0;
+    }
+    .SJS10:hover  .right-container-arrow{
+        border-right: 15px solid rgba(129,193,231,0.5);
+        border-left: 0;
+    }
+
     .left-container-arrow, .right-container-arrow{
         border-left: 0;
         left: -15px;
