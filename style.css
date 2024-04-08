@@ -46,8 +46,9 @@ nav a{
     border-radius: 50%;
     margin-right: 10px;
     filter: grayscale(100%);
+    transition: 0.5s;
 }
-nav:hover .pfp-items img{
+.pfp-items:hover img{
     filter: grayscale(0%);
 }
 .pfp-items h1{
@@ -210,207 +211,354 @@ nav .fa-solid{
     display: none;
 }
 
-/* -------------------------------------------- Front Page Social Cards -------------------------------------------- */
-.fc-cards{
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
+/* -------------------------------------------- What I Know -------------------------------------------- */
+
+.what-i-know{
+    margin: 50px 0px;
     width: 100%;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Frontend-Backend-Database-Devops-Tools-Others */
+.wik-front-back{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    width: 40%;
 }
-.fc-cards div{
-    margin: 20px;
+.wik-data-dev-tool{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+
+/* WIK box */
+.what-i-know .wik-box{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
     border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid transparent;
-    color: #fff;
-}
-.fc-cards img{
-    height: 200px;
-    width: 200px;
-}
-
-/*-- Github card --*/
-.fc-cards-github{
-    height: 200px;
-    width: 200px;
-    background-color: white;
-}
-.blur-card-github{
-    width: 98%; 
-    height: 98%;
-    top: -224px;
-    right: -180px;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.842);
-    backdrop-filter: blur(5px);
-    text-align: center;
+    padding: 3px 0px;
     transition: 0.5s;
 }
-.blur-card-github h1{
-    margin-top: 15px;
-    font-size: 22px;
-    font-weight: 100;
-    text-decoration: underline;
-    font-family: "Noe Display";
+
+/* WIK heading */
+.wik-box .wik-heading{
+    display: flex;
+    justify-content: center;
 }
-.blur-card-github p{
-    margin-top: 10px;
-    margin-right: 2px;
-    line-height: 25px;
-    font-size: 18px;
-    font-weight: 500;
+.wik-box .wik-heading h3{
+    display: inline-block;
+    margin: 15px;
+    padding: 0px 5px;
     font-family: "Raleway", sans-serif;
-}
-.blur-card-github button{
-    font-size: 15px;
-    margin-top: 10px;
-    background: gainsboro;
-    padding: 2px 5px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-.fc-cards-github:hover .blur-card-github{
-    right: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    transition: 1s;
 }
 
-/*-- LinkedIn card --*/
-.fc-cards-linkedin{
-    height: 200px;
-    width: 200px;
-    background-color: white;
+/* WIK points */
+.what-i-know .wik-box .wik-points{
+    margin: 5px 25px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-.blur-card-linkedin{
-    width: 98%; 
-    height: 98%;
-    top: -224px;
-    right: -180px;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.842);
-    backdrop-filter: blur(5px);
+.what-i-know .wik-box .wik-points h6{
     text-align: center;
-    transition: 0.5s;
-}
-.blur-card-linkedin h1{
-    margin-top: 15px;
-    font-size: 22px;
-    font-weight: 100;
-    text-decoration: underline;
-    font-family: "Noe Display";
-}
-.blur-card-linkedin p{
-    margin-top: 10px;
-    margin-right: 2px;
-    line-height: 25px;
-    font-size: 18px;
-    font-weight: 500;
+    padding: 5px 10px;
+    margin: 3px 0px;
     font-family: "Raleway", sans-serif;
-}
-.blur-card-linkedin button{
     font-size: 15px;
-    margin-top: 10px;
-    background: gainsboro;
-    padding: 2px 5px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-.fc-cards-linkedin:hover .blur-card-linkedin{
-    right: 20px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid transparent;
+    border-radius: 20px;
 }
 
-/*-- Instagram card --*/
-.fc-cards-instagram{
-    height: 200px;
-    width: 200px;
-    background-color: white;
-}
-.blur-card-instagram{
-    width: 98%; 
-    height: 98%;
-    top: -224px;
-    right: -180px;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.842);
-    backdrop-filter: blur(5px);
-    text-align: center;
+/* Database-Devops Box */
+.wik-data-dev{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    padding: 3px 0px;
     transition: 0.5s;
 }
-.blur-card-instagram h1{
-    margin-top: 15px;
-    font-size: 22px;
-    font-weight: 100;
-    text-decoration: underline;
-    font-family: "Noe Display";
-}
-.blur-card-instagram p{
-    margin-top: 10px;
-    margin-right: 2px;
-    line-height: 25px;
-    font-size: 18px;
-    font-weight: 500;
+.wik-data-dev .wik-heading h3{
+    margin: 15px 25px 5px 25px;
+    padding: 5px 5px;
     font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
 }
-.blur-card-instagram button{
+.wik-data-dev .wik-points{
+    margin: 5px 25px 5px 15px;
+}
+.wik-data-dev .wik-points h6{
+    display: inline-block;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 2px 0px;
+    font-family: "Raleway", sans-serif;
     font-size: 15px;
-    margin-top: 10px;
-    background: gainsboro;
-    padding: 2px 5px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-.fc-cards-instagram:hover .blur-card-instagram{
-    right: 20px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    /* transition: 0.5s; */
 }
 
-/*-- Youtube card --*/
-.fc-cards-youtube{
-    height: 200px;
-    width: 200px;
-    background-color: white;
-}
-.blur-card-youtube{
-    width: 98%; 
-    height: 98%;
-    top: -224px;
-    right: -180px;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.842);
-    backdrop-filter: blur(5px);
-    text-align: center;
+/* -------------------------------------------- What I know - Hover property-------------------------------------------- */
+
+.wik-box:hover, .wik-data-dev:hover{
+    cursor: pointer;
+    
     transition: 0.5s;
 }
-.blur-card-youtube h1{
-    margin-top: 15px;
-    font-size: 22px;
-    font-weight: 100;
-    text-decoration: underline;
-    font-family: "Noe Display";
-}
-.blur-card-youtube p{
-    margin-top: 10px;
-    margin-right: 2px;
-    line-height: 25px;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: "Raleway", sans-serif;
-}
-.blur-card-youtube button{
-    font-size: 15px;
-    margin-top: 10px;
-    background: gainsboro;
-    padding: 2px 5px;
-    border-radius: 5px;
-    border: none;
+
+
+/* Frontend */
+.wik-front:hover{
     cursor: pointer;
+    background-color: black;
+    transition-delay: 2.5s;
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 1);
 }
-.fc-cards-youtube:hover .blur-card-youtube{
-    right: 20px;
+.wik-front:hover .wik-heading h3{
+    background-color: white;
+    color: black;
+    transition-delay: 2.5s;
 }
+.wik-front:hover .wik-points .wik-html{
+    background-color: rgba(252,74,11);
+    transition-delay: 2s;
+}
+.wik-front:hover .wik-points .wik-css{
+    background-color: rgba(38,78,228);
+    transition-delay: 1.5s;
+}
+.wik-front:hover .wik-points .wik-javascript{
+    background-color: rgba(240,219,79);
+    color: black;
+    transition-delay: 1s;
+}
+.wik-front:hover .wik-points .wik-react{
+    background-color: rgba(97,218,251);
+    color: black;
+    transition-delay: 0.5s;
+}
+.wik-front:hover .wik-points .wik-bootstrap{
+    background-color: rgba(252,74,11);
+}
+
+
+/* Backend */
+.wik-back:hover{
+    cursor: pointer;
+    background-color: black;
+    transition-delay: 2.5s;
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 1);
+}
+.wik-back:hover .wik-heading h3{
+    background-color: white;
+    color: black;
+    transition-delay: 2.5s;
+}
+.wik-back:hover .wik-points .wik-node{
+    background-color: rgba(139,197,0);
+    transition-delay: 2s;
+    color: black;
+}
+.wik-back:hover .wik-points .wik-c{
+    background-color: rgba(0,66,131);
+    transition-delay: 1.5s;
+}
+.wik-back:hover .wik-points .wik-java{
+    background-color: rgba(82,131,162);
+    transition-delay: 1s;
+    color: black;
+}
+.wik-back:hover .wik-points .wik-python{
+    background-color: rgba(54,115,165);
+    transition-delay: 0.5s;
+}
+.wik-back:hover .wik-points .wik-javascript{
+    background-color: rgba(240,219,79);
+    color: black;
+}
+
+
+/* Tool */
+.wik-tools:hover{
+    cursor: pointer;
+    background-color: black;
+    transition-delay: 2.5s;
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 1);
+}
+.wik-tools:hover .wik-heading h3{
+    background-color: white;
+    color: black;
+    transition-delay: 2.5s;
+}
+.wik-tools:hover .wik-points .wik-vscode{
+    background-color: rgba(0,130,208);
+    transition-delay: 2s;
+}
+.wik-tools:hover .wik-points .wik-photoshop{
+    background-color: rgba(45,169,255);
+    transition-delay: 1.5s;
+    color: black;
+}
+.wik-tools:hover .wik-points .wik-msoffice{
+    background-color: rgba(82,131,162);
+    transition-delay: 1s;
+}
+.wik-tools:hover .wik-points .wik-figma{
+    background-color: rgba(162,89,255);
+    transition-delay: 0.5s;
+}
+.wik-tools:hover .wik-points .wik-git{
+    background-color: rgba(240,80,51);
+}
+
+/* Database-Devops */
+.wik-data-dev:hover{
+    cursor: pointer;
+    background-color: black;
+    transition-delay: 2s;
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 1);
+}
+.wik-data-dev:hover .wik-heading h3{
+    background-color: white;
+    color: black;
+    transition-delay: 2s;
+}
+.wik-data-dev:hover .wik-points .wik-mongo{
+    background-color: rgba(79,170,65);
+    transition-delay: 1.5s;
+}
+.wik-data-dev:hover .wik-points .wik-sql{
+    background-color: rgba(228,142,0);
+    transition-delay: 1s;
+    /* color: black; */
+}
+.wik-data-dev:hover .wik-points .wik-aws{
+    background-color: rgba(38,46,59);
+    transition-delay: 0.5s;
+}
+.wik-data-dev:hover .wik-points .wik-git{
+    background-color: rgba(240,80,51);
+}
+
+/* Others */
+.wik-others:hover{
+    cursor: pointer;
+    background-color: black;
+    transition-delay: 2.5s;
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 1);
+}
+.wik-others:hover .wik-heading h3{
+    background-color: white;
+    color: black;
+    transition-delay: 2.5s;
+}
+.wik-others:hover .wik-points .wik-management{
+    background-color: #ab20d9;
+    transition-delay: 2s;
+}
+.wik-others:hover .wik-points .wik-biking{
+    background-color: #2cc2d8;
+    transition-delay: 1.5s;
+    color: black;
+}
+.wik-others:hover .wik-points .wik-cooking{
+    background-color: #34e5b5;
+    color: black;
+    transition-delay: 1s;
+}
+.wik-others:hover .wik-points .wik-streaming{
+    background-color:  #faf218;
+    color: black;
+    transition-delay: 0.5s;
+}
+.wik-others:hover .wik-points .wik-travelling{
+    background-color: #f534b3;
+}
+
+/* -------------------------------------------- Responsive-What I know -------------------------------------------- */
+
+@media (max-width: 1600px){
+    .what-i-know{
+        flex-direction: column;
+    }
+    .wik-front-back{
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .wik-data-dev-tool{
+        width: 100%;
+    }
+    .Project{
+        top: 50px;
+    }
+}
+
+@media (max-width: 950px){
+    .what-i-know{
+        flex-direction: column;
+    }
+    .wik-box{
+        margin: 10px;
+    }
+    .wik-front-back{
+        width: 100%;
+        margin: 20px 0px;
+        /* flex-direction: column; */
+    }
+    .wik-data-dev-tool{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .Project, .Journey{
+        top: 150px;
+    }
+}
+
+@media (max-width: 630px){
+    .what-i-know{
+        flex-direction: column;
+    }
+    .wik-box{
+        margin: 10px;
+    }
+    .wik-front-back{
+        width: 100%;
+        margin: 20px 0px;
+        flex-wrap: wrap;
+    }
+    .wik-data-dev-tool{
+        display: none;
+        width: 100%;
+    }
+    .Project, .Journey{
+        top: 0px;
+    }
+
+}
+
 
 /* -------------------------------------------- Responsive-Header -------------------------------------------- */
 
@@ -418,7 +566,7 @@ nav .fa-solid{
 @media (max-width: 700px)
 {
     .front-content{
-        top: 60%;
+        top: 65%;
     }
     .front-content h6{
         font-size: 15px;
@@ -482,39 +630,13 @@ nav .fa-solid{
             top: -160px;
         }
     }
-
-    .fc-cards div{
-        width: 100px;
-        height: 100px;
-    }
-    .fc-cards img{
-        height: 100px;
-        width: 100px;
-    }
-    .fc-cards h1{
-        display: none;
-    }
-    .fc-cards p{
-        display: none;
-    }
-    .fc-cards .fa-arrow-up-right-from-square{
-        font-size: 15px;
-    }
-    .fc-cards .blur-card button{
-        margin-top: 38px;
-    }
-    .blur-card{
-        top: -124px;
-        right: 20px;
-        backdrop-filter: blur(0px);
-    }
 }
 
 /*-- Tablet Device --*/
 @media (min-width:701px) and (max-width: 1395px)
 {
     .front-content{
-        top: 60%;
+        top: 70%;
     }
     .front-content h6{
         font-size: 20px;
@@ -728,7 +850,7 @@ nav .fa-solid{
     font-weight: 500;
 }
 .mp-card-portfolio:hover p{
-    margin-top: 0px;
+    margin-top: -15px;
     text-align: center;
     display: block;
 }
@@ -801,7 +923,7 @@ nav .fa-solid{
 }
 .amazon-stack{
     display: inline-flex;
-    margin-left: 49%;
+    margin-left: 35%;
 }
 .mp-card-amazon h6{
     margin: 0 0 0 5px;
@@ -920,7 +1042,7 @@ nav .fa-solid{
     .Project h1{
     padding-top: 20px;
     margin-bottom: 20px;
-    font-size: 20px;
+    /* font-size: 20px; */
     }
     .Project h1::after{
         
@@ -930,6 +1052,36 @@ nav .fa-solid{
     .my-project{
         flex-direction: column;
     }
+
+/*-- Project : Portfolio --*/
+.mp-card-portfolio h3{
+    margin: 5px 0 0 0;
+    font-size: 20px;
+}
+.portfolio-stack{
+    margin-left: auto;
+}
+.mp-card-portfolio h6{
+    margin: 0 0 0 5px;
+    padding: 7px;
+    border-radius: 15px;
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.mp-card-portfolio:hover h6{
+    display: none;
+}
+.mp-card-portfolio p{
+    padding: 0 30px;
+    font-size: 15px;
+}
+.mp-card-portfolio:hover p{
+    margin-top: -15px;
+}
 
 /*-- Project : Amazon Clone --*/
 .mp-card-amazon h3{
@@ -958,36 +1110,6 @@ nav .fa-solid{
     font-size: 15px;
 }
 .mp-card-amazon:hover p{
-    margin-top: -15px;
-}
-
-/*-- Project : Amazon Clone --*/
-.mp-card-portfolio h3{
-    margin: 5px 0 0 0;
-    font-size: 20px;
-}
-.portfolio-stack{
-    margin-left: auto;
-}
-.mp-card-portfolio h6{
-    margin: 0 0 0 5px;
-    padding: 7px;
-    border-radius: 15px;
-    font-family: "Raleway", sans-serif;
-    font-size: 10px;
-    font-weight: 500;
-    display: inline-block;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.mp-card-portfolio:hover h6{
-    display: none;
-}
-.mp-card-portfolio p{
-    padding: 0 30px;
-    font-size: 15px;
-}
-.mp-card-portfolio:hover p{
     margin-top: -15px;
 }
 }
@@ -1165,6 +1287,11 @@ nav .fa-solid{
 }
 .right-container img{
     left: -35px;
+}
+.SJS12 img, .SJS10 img{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
 }
 
 
@@ -1347,7 +1474,6 @@ nav .fa-solid{
         font-weight: 700;
     }
     .text-box .points p{
-        /* text-decoration: underline; */
         font-size: 14px;
         font-weight: 200;
     }
@@ -1406,4 +1532,4 @@ nav .fa-solid{
         border-right:15px solid rgba(255, 255, 255, 0.25);
     }
     
-} 
+}
