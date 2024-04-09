@@ -19,6 +19,9 @@ body{
     background-attachment: fixed;
     background-position: top center;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 
 /* ------------------------------------------------------------------ HEADER ------------------------------------------------------------------ */
 .header{
@@ -453,11 +456,12 @@ nav .fa-solid{
 .wik-data-dev:hover .wik-points .wik-sql{
     background-color: rgba(228,142,0);
     transition-delay: 1s;
-    /* color: black; */
+    color: black;
 }
 .wik-data-dev:hover .wik-points .wik-aws{
-    background-color: rgba(38,46,59);
+    background-color: rgba(248,153,27);
     transition-delay: 0.5s;
+    color: black;
 }
 .wik-data-dev:hover .wik-points .wik-git{
     background-color: rgba(240,80,51);
@@ -554,7 +558,7 @@ nav .fa-solid{
         width: 100%;
     }
     .Project, .Journey{
-        top: 0px;
+        top: 50px;
     }
 
 }
@@ -1532,4 +1536,149 @@ nav .fa-solid{
         border-right:15px solid rgba(255, 255, 255, 0.25);
     }
     
+}
+
+/* ------------------------------------------------------------------ FOOTER ------------------------------------------------------------------ */
+
+/* -------------------------------------------- Socials -------------------------------------------- */
+
+.socials{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.socials a{
+    text-decoration: none;
+}
+
+.socials-container{
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*-- Social row 1 and 2 --*/
+.socials-inner-1, .socials-inner-2{
+    display: flex;
+}
+
+/*-- Social icon --*/
+.icon{
+    margin: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+/*-- Social icon box --*/
+.icon span{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.icon span i{
+    font-size: 30px;
+    color: black;
+    line-height: 60px;
+}
+
+.icon:hover span i{
+    color: white;
+}
+
+/*-- Social names --*/
+.icon .tooltip{
+    position: absolute;
+    top: 0px;
+    background: white;
+    color: white;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    padding: 10px 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.icon:hover .tooltip{
+    top: -60px;
+    opacity: 1;
+}
+
+.icon .tooltip::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: white;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+
+
+/*-- Social colors --*/
+.linkedin:hover span,
+.linkedin:hover .tooltip,
+.linkedin:hover .tooltip::before{
+    background: rgba(12,100,197);
+}
+
+.github:hover span,
+.github:hover .tooltip,
+.github:hover .tooltip::before{
+    background: rgba(0,0,0);
+}
+
+.twitter:hover span,
+.twitter:hover .tooltip,
+.twitter:hover .tooltip::before{
+    background: rgba(29,155,240);
+}
+
+.facebook:hover span,
+.facebook:hover .tooltip,
+.facebook:hover .tooltip::before{
+    background: rgba(8,101,255);
+}
+
+.instagram:hover span,
+.instagram:hover .tooltip,
+.instagram:hover .tooltip::before{
+    background: rgba(254,8,105);
+}
+
+.youtube:hover span,
+.youtube:hover .tooltip,
+.youtube:hover .tooltip::before{
+    background: rgba(255,0,0);
+}
+
+/*----------------------------------------------------- Responsive Socials -----------------------------------------------------*/
+
+@media (min-width:530px) and (max-width:900px) {
+    .socials{
+        position: relative;
+        top: 80px;
+    }
+    .socials-container{
+        flex-direction: column;
+    }
 }
