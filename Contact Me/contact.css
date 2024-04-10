@@ -354,6 +354,7 @@ body::-webkit-scrollbar{
     font-size: 15px;
     font-weight: 600;
     border-radius: 50px;
+    transition: 0.5s;
 }
 
 .contact-details textarea{
@@ -362,6 +363,7 @@ body::-webkit-scrollbar{
     padding-top: 15px;
     border-radius: 20px;
     resize: none;
+    transition: 0.5s;
 }
 
 .contact-input:focus{

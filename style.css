@@ -1169,7 +1169,7 @@ nav .fa-solid{
 .timeline{
     position: relative;
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 100px auto 20px auto;
 }
 
 .container{
