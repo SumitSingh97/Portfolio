@@ -328,7 +328,6 @@ nav .fa-solid{
 
 .wik-box:hover, .wik-data-dev:hover{
     cursor: pointer;
-    
     transition: 0.5s;
 }
 
