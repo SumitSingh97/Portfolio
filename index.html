@@ -27,7 +27,7 @@
 </head>
 <body>
     <!------------------------------------------------------------------ HEADER ------------------------------------------------------------------>
-    <section class="header">
+    <section class="header" id="Header">
                           <!-------------------------------------------- Navbar -------------------------------------------->
         <nav>
             <a href="https://www.linkedin.com/in/exilium7/" target="_blank" class="pfp-items" title="Sumit">
@@ -38,17 +38,17 @@
             <div class="nav-links" id="navlinks">
                 <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">PROJECT</a></li>
-                    <li><a href="">JOURNEY</a></li>
-                    <li><a href="">SOCIALS</a></li>
+                    <li><a href="#About">ABOUT</a></li>
+                    <li><a href="#Project">PROJECT</a></li>
+                    <li><a href="#Journey">JOURNEY</a></li>
+                    <li><a href="#Socials">SOCIALS</a></li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
 
                        <!-------------------------------------------- Front Page Content -------------------------------------------->
-        <div class="front-content">
+        <div class="front-content" id="About">
             <h6>HELLO MY NAME IS <a href="https://www.linkedin.com/in/exilium7/" target="_blank" class="fc-name">SUMIT</a></h6>
 
             <div class="main-typing">
@@ -157,7 +157,7 @@
     </section>
 
     <!------------------------------------------------------------------ HOME-CORE ------------------------------------------------------------------>
-    <section class="Project">
+    <section class="Project" id="Project">
                            <!-------------------------------------------- My Work -------------------------------------------->
         <div class="my-project">
 
@@ -431,7 +431,7 @@
     </section>
     
 
-    <section class="Journey">
+    <section class="Journey" id="Journey">
 
         <div class="my-journey">
             
@@ -721,7 +721,7 @@
 
                           <!-------------------------------------------- Socials -------------------------------------------->
 
-                          <section class="socials">
+                          <section class="socials" id="Socials">
 
                             <div class="socials-container">
                         
@@ -797,6 +797,17 @@
                             </div>
                         
                         </section>
+
+
+    <section class="go-to-top" id="Go-To-Top">
+
+        <a href="#Header">
+            <div class="scroll-back">
+                <i class="fa-solid fa-circle-chevron-up"></i>
+            </div>
+        </a>
+
+    </section>
 
     <!------------------------------------------------------------------ JAVASCRIPT ------------------------------------------------------------------>
     <script src="script.js"></script>

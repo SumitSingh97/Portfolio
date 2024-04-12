@@ -6,6 +6,10 @@
     src: url("Resource/font/noe-display-medium.woff2") format("woff2")
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -1680,4 +1684,36 @@ nav .fa-solid{
     .socials-container{
         flex-direction: column;
     }
+}
+
+/*----------------------------------------------------- Scroll to top button -----------------------------------------------------*/
+
+.scroll-back{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    bottom: 40px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.scroll-back i{
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+/*----------------------------------------------------- Hover - Scroll to top button -----------------------------------------------------*/
+.scroll-back:hover{
+    background-color: white;
+}
+
+.scroll-back:hover i{
+    transform: rotate(360deg);
+    font-size: 40px;
 }
