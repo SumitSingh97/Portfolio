@@ -1,554 +1,554 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-body{
-    width: 100%;
-    background-image: url(Background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top center;
+body {
+  width: 100%;
+  background-image: url(Background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
 }
-body::-webkit-scrollbar{
-    display: none;
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* -------------------------------------------- Contact Section -------------------------------------------- */
 
-.contact{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* -------------------------------------------- Contact-Container -------------------------------------------- */
-.contact-container{
-    width: 80%;
-    margin: 50px 0px 0px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.contact-container {
+  width: 80%;
+  margin: 50px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Back to Home */
-.contact-container a{
-    font-size: 25px;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-    font-family: "Raleway", sans-serif;
-    transition: .2s;
+.contact-container a {
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  transition: 0.2s;
 }
 
-.contact-container a:hover{
-    transform: translateY(-5px);
-    text-decoration: underline;
+.contact-container a:hover {
+  transform: translateY(-5px);
+  text-decoration: underline;
 }
 
 /* -------------------------------------------- Skill and Contact -------------------------------------------- */
-.skills-contact{
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.skills-contact {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /* -------------------------------------------- Skill Section -------------------------------------------- */
-.skills{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+.skills {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.skills-row1{
-    margin: 10px 10px;
-    display: flex;
-    justify-content: space-between;
+.skills-row1 {
+  margin: 10px 10px;
+  display: flex;
+  justify-content: space-between;
 }
-.skills-row2{
-    margin: 10px 10px;
-    display: flex;
-    justify-content: space-between;
+.skills-row2 {
+  margin: 10px 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Skills box */
-.skills-box{
-    margin: 5px;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.5);
-    height: 100%;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
-    border-radius: 20px;
-    padding: 3px 0px;
-    transition: 0.5s;
+.skills-box {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
+  border-radius: 20px;
+  padding: 3px 0px;
+  transition: 0.5s;
 }
 
 /* Skills heading */
-.skills-box .skills-heading{
-    display: flex;
-    justify-content: center;
+.skills-box .skills-heading {
+  display: flex;
+  justify-content: center;
 }
-.skills-box .skills-heading h3{
-    display: inline-block;
-    margin: 15px;
-    padding: 0px 5px;
-    font-family: "Raleway", sans-serif;
-    font-size: 25px;
-    font-weight: 500;
-    color: white;
-    text-align: center;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    transition: 1s;
+.skills-box .skills-heading h3 {
+  display: inline-block;
+  margin: 15px;
+  padding: 0px 5px;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  transition: 1s;
 }
 
 /* Skills points */
-.skills-box .skills-points{
-    margin: 5px 25px 5px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.skills-box .skills-points {
+  margin: 5px 25px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.skills-box .skills-points h6{
-    text-align: center;
-    padding: 5px 10px;
-    margin: 3px 0px;
-    font-family: "Raleway", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid transparent;
-    border-radius: 20px;
+.skills-box .skills-points h6 {
+  text-align: center;
+  padding: 5px 10px;
+  margin: 3px 0px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid transparent;
+  border-radius: 20px;
 }
 
 /* Database-Devops Box */
-.skills-data-dev{
-    margin: 5px;
-    background-color: rgba(255, 255, 255, 0.5);
-    height: 100%;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
-    border-radius: 20px;
-    padding: 3px 0px;
-    transition: 0.5s;
+.skills-data-dev {
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
+  border-radius: 20px;
+  padding: 3px 0px;
+  transition: 0.5s;
 }
-.skills-data-dev .skills-heading h3{
-    margin: 15px 25px 5px 25px;
-    padding: 5px 5px;
-    font-family: "Raleway", sans-serif;
-    font-size: 25px;
-    font-weight: 500;
-    color: white;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
+.skills-data-dev .skills-heading h3 {
+  margin: 15px 25px 5px 25px;
+  padding: 5px 5px;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
 }
-.skills-data-dev .skills-points{
-    display: flex;
-    justify-content: center;
-    margin: 5px 25px 5px 15px;
+.skills-data-dev .skills-points {
+  display: flex;
+  justify-content: center;
+  margin: 5px 25px 5px 15px;
 }
-.skills-data-dev .skills-points h6{
-    display: inline-block;
-    text-align: center;
-    padding: 5px 10px;
-    margin: 2px 2px;
-    font-family: "Raleway", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid transparent;
-    border-radius: 20px;
+.skills-data-dev .skills-points h6 {
+  display: inline-block;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 2px 2px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid transparent;
+  border-radius: 20px;
 }
 
 /* Hover Frontend */
-.skills-box:hover, .skills-data-dev:hover{
-    cursor: pointer;
-    transition: 0.5s;
+.skills-box:hover,
+.skills-data-dev:hover {
+  cursor: pointer;
+  transition: 0.5s;
 }
-.skills-front:hover{
-    cursor: pointer;
-    background-color: black;
-    transition-delay: 2.5s;
-    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 1);
+.skills-front:hover {
+  cursor: pointer;
+  background-color: black;
+  transition-delay: 2.5s;
+  box-shadow: 0 0 20px 0px rgba(255, 255, 255, 1);
 }
-.skills-front:hover .skills-heading h3{
-    background-color: white;
-    color: black;
-    transition-delay: 2.5s;
+.skills-front:hover .skills-heading h3 {
+  background-color: white;
+  color: black;
+  transition-delay: 2.5s;
 }
-.skills-front:hover .skills-points .skills-html{
-    background-color: rgba(252,74,11);
-    transition-delay: 2s;
+.skills-front:hover .skills-points .skills-html {
+  background-color: rgba(252, 74, 11);
+  transition-delay: 2s;
 }
-.skills-front:hover .skills-points .skills-css{
-    background-color: rgba(38,78,228);
-    transition-delay: 1.5s;
+.skills-front:hover .skills-points .skills-css {
+  background-color: rgba(38, 78, 228);
+  transition-delay: 1.5s;
 }
-.skills-front:hover .skills-points .skills-javascript{
-    background-color: rgba(240,219,79);
-    color: black;
-    transition-delay: 1s;
+.skills-front:hover .skills-points .skills-javascript {
+  background-color: rgba(240, 219, 79);
+  color: black;
+  transition-delay: 1s;
 }
-.skills-front:hover .skills-points .skills-react{
-    background-color: rgba(97,218,251);
-    color: black;
-    transition-delay: 0.5s;
+.skills-front:hover .skills-points .skills-react {
+  background-color: rgba(97, 218, 251);
+  color: black;
+  transition-delay: 0.5s;
 }
-.skills-front:hover .skills-points .skills-bootstrap{
-    background-color: rgba(252,74,11);
+.skills-front:hover .skills-points .skills-bootstrap {
+  background-color: rgba(252, 74, 11);
 }
 
 /* Hover Backend */
-.skills-back:hover{
-    cursor: pointer;
-    background-color: black;
-    transition-delay: 2.5s;
-    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 1);
+.skills-back:hover {
+  cursor: pointer;
+  background-color: black;
+  transition-delay: 2.5s;
+  box-shadow: 0 0 20px 0px rgba(255, 255, 255, 1);
 }
-.skills-back:hover .skills-heading h3{
-    background-color: white;
-    color: black;
-    transition-delay: 2.5s;
+.skills-back:hover .skills-heading h3 {
+  background-color: white;
+  color: black;
+  transition-delay: 2.5s;
 }
-.skills-back:hover .skills-points .skills-node{
-    background-color: rgba(139,197,0);
-    transition-delay: 2s;
-    color: black;
+.skills-back:hover .skills-points .skills-node {
+  background-color: rgba(139, 197, 0);
+  transition-delay: 2s;
+  color: black;
 }
-.skills-back:hover .skills-points .skills-c{
-    background-color: rgba(0,66,131);
-    transition-delay: 1.5s;
+.skills-back:hover .skills-points .skills-c {
+  background-color: rgba(0, 66, 131);
+  transition-delay: 1.5s;
 }
-.skills-back:hover .skills-points .skills-java{
-    background-color: rgba(82,131,162);
-    transition-delay: 1s;
-    color: black;
+.skills-back:hover .skills-points .skills-java {
+  background-color: rgba(82, 131, 162);
+  transition-delay: 1s;
+  color: black;
 }
-.skills-back:hover .skills-points .skills-python{
-    background-color: rgba(54,115,165);
-    transition-delay: 0.5s;
+.skills-back:hover .skills-points .skills-python {
+  background-color: rgba(54, 115, 165);
+  transition-delay: 0.5s;
 }
-.skills-back:hover .skills-points .skills-javascript{
-    background-color: rgba(240,219,79);
-    color: black;
+.skills-back:hover .skills-points .skills-javascript {
+  background-color: rgba(240, 219, 79);
+  color: black;
 }
-
 
 /* Hover Tool */
-.skills-tools:hover{
-    cursor: pointer;
-    background-color: black;
-    transition-delay: 2.5s;
-    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 1);
+.skills-tools:hover {
+  cursor: pointer;
+  background-color: black;
+  transition-delay: 2.5s;
+  box-shadow: 0 0 20px 0px rgba(255, 255, 255, 1);
 }
-.skills-tools:hover .skills-heading h3{
-    background-color: white;
-    color: black;
-    transition-delay: 2.5s;
+.skills-tools:hover .skills-heading h3 {
+  background-color: white;
+  color: black;
+  transition-delay: 2.5s;
 }
-.skills-tools:hover .skills-points .skills-vscode{
-    background-color: rgba(0,130,208);
-    transition-delay: 2s;
+.skills-tools:hover .skills-points .skills-vscode {
+  background-color: rgba(0, 130, 208);
+  transition-delay: 2s;
 }
-.skills-tools:hover .skills-points .skills-photoshop{
-    background-color: rgba(45,169,255);
-    transition-delay: 1.5s;
-    color: black;
+.skills-tools:hover .skills-points .skills-photoshop {
+  background-color: rgba(45, 169, 255);
+  transition-delay: 1.5s;
+  color: black;
 }
-.skills-tools:hover .skills-points .skills-msoffice{
-    background-color: rgba(82,131,162);
-    transition-delay: 1s;
+.skills-tools:hover .skills-points .skills-msoffice {
+  background-color: rgba(82, 131, 162);
+  transition-delay: 1s;
 }
-.skills-tools:hover .skills-points .skills-figma{
-    background-color: rgba(162,89,255);
-    transition-delay: 0.5s;
+.skills-tools:hover .skills-points .skills-figma {
+  background-color: rgba(162, 89, 255);
+  transition-delay: 0.5s;
 }
-.skills-tools:hover .skills-points .skills-git{
-    background-color: rgba(240,80,51);
+.skills-tools:hover .skills-points .skills-git {
+  background-color: rgba(240, 80, 51);
 }
 
 /* Hover Database-Devops */
-.skills-data-dev:hover{
-    cursor: pointer;
-    background-color: black;
-    transition-delay: 2s;
-    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 1);
+.skills-data-dev:hover {
+  cursor: pointer;
+  background-color: black;
+  transition-delay: 2s;
+  box-shadow: 0 0 20px 0px rgba(255, 255, 255, 1);
 }
-.skills-data-dev:hover .skills-heading h3{
-    background-color: white;
-    color: black;
-    transition-delay: 2s;
+.skills-data-dev:hover .skills-heading h3 {
+  background-color: white;
+  color: black;
+  transition-delay: 2s;
 }
-.skills-data-dev:hover .skills-points .skills-mongo{
-    background-color: rgba(79,170,65);
-    transition-delay: 1.5s;
+.skills-data-dev:hover .skills-points .skills-mongo {
+  background-color: rgba(79, 170, 65);
+  transition-delay: 1.5s;
 }
-.skills-data-dev:hover .skills-points .skills-sql{
-    background-color: rgba(228,142,0);
-    transition-delay: 1s;
-    color: black;
+.skills-data-dev:hover .skills-points .skills-sql {
+  background-color: rgba(228, 142, 0);
+  transition-delay: 1s;
+  color: black;
 }
-.skills-data-dev:hover .skills-points .skills-aws{
-    background-color: rgba(248,153,27);
-    transition-delay: 0.5s;
-    color: black;
+.skills-data-dev:hover .skills-points .skills-aws {
+  background-color: rgba(248, 153, 27);
+  transition-delay: 0.5s;
+  color: black;
 }
-.skills-data-dev:hover .skills-points .skills-git{
-    background-color: rgba(240,80,51);
+.skills-data-dev:hover .skills-points .skills-git {
+  background-color: rgba(240, 80, 51);
 }
 
 /* -------------------------------------------- Contact-Form -------------------------------------------- */
-.contact-form{
-    margin: 10px;
-    padding: 10px;
-    height: 550px;
-    width: 550px;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
+.contact-form {
+  margin: 10px;
+  padding: 10px;
+  height: 550px;
+  width: 550px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
 }
 
-.contact-details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
-.contact-details-text{
-    gap: 5px;
-    text-align: center;
-    font-family: "Raleway", sans-serif;
-    color: black;
-    font-size: 25px;
+.contact-details-text {
+  gap: 5px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-size: 25px;
 }
-.contact-details-text h1, .contact-details-text h5{
-    font-weight: 500;
-}
-
-::placeholder{
-    font-style: italic;
-    color: gray;
+.contact-details-text h1,
+.contact-details-text h5 {
+  font-weight: 500;
 }
 
-.contact-input{
-    width: 90%;
-    height: 40px;
-    border: none;
-    outline: none;
-    font-family: "Raleway", sans-serif;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 600;
-    border-radius: 50px;
-    transition: 0.5s;
+::placeholder {
+  font-style: italic;
+  color: gray;
 }
 
-.contact-details textarea{
-    height: 200px;
-    line-height: 20px;
-    padding-top: 15px;
-    border-radius: 20px;
-    resize: none;
-    transition: 0.5s;
+.contact-input {
+  width: 90%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: 0.5s;
 }
 
-.contact-input:focus{
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+.contact-details textarea {
+  height: 200px;
+  line-height: 20px;
+  padding-top: 15px;
+  border-radius: 20px;
+  resize: none;
+  transition: 0.5s;
 }
 
-.contact-details button{
-    display: flex;
-    align-items: center;
-    padding: 8px 50px;
-    border: none;
-    outline: none;
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 15px;
-    transition: 0.3s;
+.contact-input:focus {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
-.contact-details button:hover{
-    cursor: pointer;
-    background-color: black;
-    box-shadow: 0 0 15px 0px rgba(255, 255, 255, 1);
+
+.contact-details button {
+  display: flex;
+  align-items: center;
+  padding: 8px 50px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.contact-details button:hover {
+  cursor: pointer;
+  background-color: black;
+  box-shadow: 0 0 15px 0px rgba(255, 255, 255, 1);
 }
 
 /*----------------------------------------------------- Responsive Contact -----------------------------------------------------*/
 
-@media (max-width:650px){
-
-    .contact-form{
-        width: 450px;
-    }
-    .contact-details-text{
-        font-size: 20px;
-    }
-    .contact-details-text h5{
-        font-weight: 600;
-    }
+@media (max-width: 650px) {
+  .contact-form {
+    width: 450px;
+  }
+  .contact-details-text {
+    font-size: 20px;
+  }
+  .contact-details-text h5 {
+    font-weight: 600;
+  }
 }
-@media (max-width:460px){
-    .skills-row1 , .skills-row2{
-        flex-direction: column;
-    }
-    .contact-form{
-        width: 350px;
-    }
+@media (max-width: 460px) {
+  .skills-row1,
+  .skills-row2 {
+    flex-direction: column;
+  }
+  .contact-form {
+    width: 350px;
+  }
 }
 /* ------------------------------------------------------------------ FOOTER ------------------------------------------------------------------ */
 
 /* -------------------------------------------- Socials -------------------------------------------- */
 
-.socials{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.socials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.socials a{
-    text-decoration: none;
+.socials a {
+  text-decoration: none;
 }
 
-.socials-container{
-    margin: 30px 0px 20px 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.socials-container {
+  margin: 30px 0px 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /*-- Social row 1 and 2 --*/
-.socials-inner-1, .socials-inner-2{
-    display: flex;
+.socials-inner-1,
+.socials-inner-2 {
+  display: flex;
 }
 
 /*-- Social icon --*/
-.icon{
-    margin: 40px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+.icon {
+  margin: 40px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 /*-- Social icon box --*/
-.icon span{
-    position: relative;
-    height: 60px;
-    width: 60px;
-    display: block;
-    background: white;
-    border-radius: 50%;
-    text-align: center;
-    z-index: 2;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+.icon span {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  display: block;
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.icon span i{
-    font-size: 30px;
-    color: black;
-    line-height: 60px;
+.icon span i {
+  font-size: 30px;
+  color: black;
+  line-height: 60px;
 }
 
-.icon:hover span i{
-    color: white;
+.icon:hover span i {
+  color: white;
 }
 
 /*-- Social names --*/
-.icon .tooltip{
-    position: absolute;
-    top: 0px;
-    background: white;
-    color: white;
-    font-size: 15px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    padding: 10px 10px;
-    border-radius: 20px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+.icon .tooltip {
+  position: absolute;
+  top: 0px;
+  background: white;
+  color: white;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  padding: 10px 10px;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.icon:hover .tooltip{
-    top: -60px;
-    opacity: 1;
-}
-
-.icon .tooltip::before{
-    position: absolute;
-    content: "";
-    height: 15px;
-    width: 15px;
-    background: white;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+.icon:hover .tooltip {
+  top: -60px;
+  opacity: 1;
 }
 
-
+.icon .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: white;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
 
 /*-- Social colors --*/
 .linkedin:hover span,
 .linkedin:hover .tooltip,
-.linkedin:hover .tooltip::before{
-    background: rgba(12,100,197);
+.linkedin:hover .tooltip::before {
+  background: rgba(12, 100, 197);
 }
 
 .github:hover span,
 .github:hover .tooltip,
-.github:hover .tooltip::before{
-    background: rgba(0,0,0);
+.github:hover .tooltip::before {
+  background: rgba(0, 0, 0);
 }
 
 .twitter:hover span,
 .twitter:hover .tooltip,
-.twitter:hover .tooltip::before{
-    background: rgba(29,155,240);
+.twitter:hover .tooltip::before {
+  background: rgba(29, 155, 240);
 }
 
 .facebook:hover span,
 .facebook:hover .tooltip,
-.facebook:hover .tooltip::before{
-    background: rgba(8,101,255);
+.facebook:hover .tooltip::before {
+  background: rgba(8, 101, 255);
 }
 
 .instagram:hover span,
 .instagram:hover .tooltip,
-.instagram:hover .tooltip::before{
-    background: rgba(254,8,105);
+.instagram:hover .tooltip::before {
+  background: rgba(254, 8, 105);
 }
 
 .youtube:hover span,
 .youtube:hover .tooltip,
-.youtube:hover .tooltip::before{
-    background: rgba(255,0,0);
+.youtube:hover .tooltip::before {
+  background: rgba(255, 0, 0);
 }
 
 /*----------------------------------------------------- Responsive Socials -----------------------------------------------------*/
 
-@media (min-width:530px) and (max-width:900px) {
-    .socials-container{
-        flex-direction: column;
-    }
+@media (min-width: 530px) and (max-width: 900px) {
+  .socials-container {
+    flex-direction: column;
+  }
 }
