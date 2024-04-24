@@ -1779,7 +1779,7 @@ nav .fa-solid {
 .twitter:hover span,
 .twitter:hover .tooltip,
 .twitter:hover .tooltip::before {
-  background: rgba(29, 155, 240);
+  background: rgba(4, 4, 4);
 }
 
 .facebook:hover span,
