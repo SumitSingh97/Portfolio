@@ -9,3 +9,10 @@ function showMenu() {
 function hideMenu() {
   navlinks.style.right = "-200px";
 }
+
+/* ------------------ Preloader ------------------ */
+
+var loader = document.querySelector(".preloader");
+window.addEventListener("load", function () {
+  loader.style.display = "none";
+});
