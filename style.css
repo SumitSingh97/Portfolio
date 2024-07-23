@@ -1058,6 +1058,17 @@ nav .fa-solid {
   display: block;
 }
 
+/* Tech Stack Overlays */
+
+.TTT-stack {
+  display: inline-flex;
+  margin-left: 42%;
+}
+.RPS-stack {
+  display: inline-flex;
+  margin-left: 23%;
+}
+
 /* ------------------------------------------------------------------ PROJECT-RESPONSIVE ------------------------------------------------------------------ */
 /*-- Mobile Device --*/
 @media (max-width: 850px) {
@@ -1166,6 +1177,13 @@ nav .fa-solid {
   }
   .mp-card-netflix:hover p {
     margin-top: -15px;
+  }
+
+  .TTT-stack {
+    margin-left: auto;
+  }
+  .RPS-stack {
+    margin-left: auto;
   }
 }
 
